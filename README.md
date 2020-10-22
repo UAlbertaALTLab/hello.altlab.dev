@@ -14,5 +14,5 @@ Tasks left for this project:
  - [ ] On push to the `production` branch:
      - [ ] Build a Docker image via GitHub Actions
      - [ ] Publish the Docker image to GitHub package repository
-     - [ ] Make a secure, authenticated request to <https://deploy.altlab.dev/> to fetch and deploy the latest Docker image for this app
-     - [ ] The new code should be deployed at <https://hello.altlab.dev/>
+     - [ ] Make a secure, authenticated request to <https://deploy.altlab.dev/> to fetch and deploy the latest Docker image for this app on `altlab-itw`
+     - [ ] The new code should be running on `altlab-itw` and be deployed at <https://hello.altlab.dev/>
