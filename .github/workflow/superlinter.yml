@@ -1,7 +1,12 @@
 name: Super-Linter
 
 # Run this workflow every time a new commit pushed to your repository
-on: push
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - production
 
 jobs:
   # Set the job key. The key is displayed as the job name
