@@ -9,8 +9,8 @@ If all goes well, you should be able to access this app at <https://hello.altlab
 
 Tasks left for this project:
 
- - [ ] Create a minimal Dockerfile
-    - [ ] Have the Flask app run within Gunicorn or uWSGI
+ - [x] Create a minimal Dockerfile
+    - [x] Have the Flask app run within Gunicorn or uWSGI
  - [ ] On push to the `production` branch:
      - [ ] Build a Docker image via GitHub Actions
      - [ ] Publish the Docker image to GitHub package repository
