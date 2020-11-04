@@ -12,8 +12,8 @@ Tasks left for this project:
  - [x] Create a minimal Dockerfile
     - [x] Have the Flask app run within Gunicorn or uWSGI
  - [ ] On push to the `production` branch:
-     - [ ] Build a Docker image via GitHub Actions
-     - [ ] Publish the Docker image to GitHub package repository
+     - [x] Build a Docker image via GitHub Actions
+     - [x] Publish the Docker image to GitHub package repository
      - [ ] Make a secure, authenticated request to <https://deploy.altlab.dev/> to fetch and deploy the latest Docker image for this app on `altlab-itw`
      - [ ] The new code should be running on `altlab-itw` and be deployed at <https://hello.altlab.dev/>
 
