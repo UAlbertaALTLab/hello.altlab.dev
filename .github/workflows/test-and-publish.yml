@@ -44,9 +44,17 @@ jobs:
     - name: Test github.actor(for Dockerfile)
       run: echo "${{ github.actor }}"
 
+    - name: Download artifact
+    - uses: actions/download-artifact@master
+      with:
+        name: requirements.txt
+        path: requirements.txt
+
 
     - name: Build and push Docker images
       uses: docker/build-push-action@v2.0.1
+
+
       with:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
