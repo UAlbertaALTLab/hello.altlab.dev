@@ -7,6 +7,34 @@ on:
 
 jobs:
 
+  build_and_qa:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        apt-get install python3-pip
+        python -m pip install --upgrade pip
+        pip install poetry
+        poetry install
+    - name: Lint with mypy/black
+      run: |
+        # Typecheck
+        poetry run mypy .
+        # Lint
+        poetry run black --check . --diff --exclude 'migrations/'
+    - name: Create requirements.txt (for Dockerfile)
+      run: make requirements.txt
+    - name: Upload requirements.txt
+      uses: actions/upload-artifact@v2
+      with:
+        name: requirements.txt
+        path: requirements.txt
 
   publish_to_registry:
     runs-on: ubuntu-latest
