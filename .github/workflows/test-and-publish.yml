@@ -57,8 +57,13 @@ jobs:
 
 
       with:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        username: anAntelope
+        #PACKAGES_TOKEN can be found in itw
+        #TODO: Specify
+        #This Token has these permissions
+        #Read:packages Write:packages Delete:packages
+        password: ${{ secrets.PACKAGES_TOKEN }}
+
         registry: docker.pkg.github.com
         repository: ualbertaaltlab/hello.altlab.dev/hellotest
         # ALWAYS replace the latest tag!
