@@ -19,6 +19,6 @@ Tasks left for this project:
 
 
 
-Test redeploy 
+Test redeploy at 15:03
 
 The password of hellotest docker login it's on altlab-itw:/etc/docker/hellotest_passwd
