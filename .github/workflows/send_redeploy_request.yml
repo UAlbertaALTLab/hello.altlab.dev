@@ -16,7 +16,7 @@ jobs:
       env:
         POST_TOKEN: ${{secrets.POST_TOKEN}}
       run: |
-        curl -XPOST -dsecret="$POST_TOKEN" https://deploy.altlab.dev/${{ github.event.repository.name }}
+        curl -XPOST -dsecret="$POST_TOKEN" d port=5000 https://deploy.altlab.dev/${{ github.event.repository.name }}
 
 
 
