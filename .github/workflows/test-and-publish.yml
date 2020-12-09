@@ -65,7 +65,7 @@ jobs:
         password: ${{ secrets.PACKAGES_TOKEN }}
 
         registry: docker.pkg.github.com
-        repository: ualbertaaltlab/hello.altlab.dev/hellotest
+        repository: ualbertaaltlab/hello.altlab.dev/hello.altlab.dev
         # ALWAYS replace the latest tag!
         tags: latest
 
