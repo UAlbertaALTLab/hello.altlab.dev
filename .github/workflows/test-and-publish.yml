@@ -13,10 +13,10 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: ghcr.io
-        username: ${{ github.repository_owner }}
+        username: eddieantonio
         password: ${{ secrets.CR_PAT }}
     - name: Build and push Docker images
       uses: docker/build-push-action@v2
       with:
-        tags:
-          - ualbertaaltlab/hello.altlab.dev:latest
+        tags: |
+          ghcr.io/ualbertaaltlab/hello.altlab.dev:latest
