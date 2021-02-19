@@ -22,4 +22,4 @@ ADD . /app/
 COPY --from=builder /app/.venv /app/.venv
 
 ENTRYPOINT ["/bin/tini", "--"]
-CMD ["/app/.venv/bin/gunicorn", "app.wsgi:app"]
+CMD ["/app/.venv/bin/gunicorn", "hello.wsgi:application"]
