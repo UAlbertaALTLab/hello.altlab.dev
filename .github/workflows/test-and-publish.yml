@@ -20,4 +20,4 @@ jobs:
       with:
         push: true
         tags: |
-          ghcr.io/ualbertaaltlab/hello.altlab.dev:latest
+          docker.pkg.github.com/ualbertaaltlab/hello.altlab.dev/hello.altlab.dev:latest
